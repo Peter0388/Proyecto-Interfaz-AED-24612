@@ -6,17 +6,20 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import javax.swing.JOptionPane;
 import modelo.conexion;
+import modelo.usuario;
 import gui.frmHome;
 import gui.frmLogin;
 
-public class usuarioController {
+    public class usuarioController {
+
+        Connection con;
+
+        public usuarioController() {
+            con = new conexion().establecerConexion();
+        }
+
+        
     
-    Connection con;
-
-    public usuarioController() {
-        con = new conexion().establecerConexion();
-    }
-
     // Método para validar credenciales
     public boolean validarCredenciales(String usuario, String contrasenia) {
         String sql = "SELECT * FROM usuario WHERE usuario = ? AND contrasenia = ?";
@@ -35,7 +38,7 @@ public class usuarioController {
         }
         return false;  // Credenciales incorrectas
     }
-
+    
     // Método para gestionar el inicio de sesión
     public void iniciarSesion(frmLogin loginForm) {
         String usuario = loginForm.getTxtUsuario().getText();
@@ -48,7 +51,7 @@ public class usuarioController {
             JOptionPane.showMessageDialog(null, "Usuario o contraseña incorrectos");
         }
     }
-
+    
     // Método para redirigir al home
     private void redirigirHome(frmLogin loginForm) {
         frmHome home = new frmHome();

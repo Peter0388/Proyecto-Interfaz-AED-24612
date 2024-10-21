@@ -15,6 +15,7 @@ public class usuario {
     private String genero;
     private String correo;
     private int rol;
+    private String nombreR;
 
     public usuario() {
     }
@@ -111,5 +112,15 @@ public class usuario {
     public void setRol(int rol) {
         this.rol = rol;
     }
+
+    public String getNombreR() {
+        return nombreR;
+    }
+
+    public void setNombreR(String nombreR) {
+        this.nombreR = nombreR;
+    }
+
+    
     
 }

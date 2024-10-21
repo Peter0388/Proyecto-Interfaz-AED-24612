@@ -1,13 +1,14 @@
 
 package vista;
 
+import gui.frmLogin;
 import modelo.conexion;
 
 public class main {
 
     public static void main(String[] args) {
-        conexion objetoConexion = new conexion();
-        objetoConexion.establecerConexion();
+        frmLogin activeLogin = new frmLogin();
+        activeLogin.setVisible(true);
     }
     
 }

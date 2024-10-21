@@ -55,12 +55,12 @@ public class frmLogin extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Palatino Linotype", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(28, 22, 16));
         jLabel2.setText("Usuario :");
-        jpFondoLogin.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 90, 60, 20));
+        jpFondoLogin.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 90, 80, 20));
 
         jLabel3.setFont(new java.awt.Font("Palatino Linotype", 1, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(28, 22, 16));
         jLabel3.setText("Contraseña :");
-        jpFondoLogin.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 160, 90, 20));
+        jpFondoLogin.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 160, 110, 20));
 
         txtUsuario.setBackground(new java.awt.Color(255, 255, 255));
         txtUsuario.setForeground(new java.awt.Color(0, 0, 0));
